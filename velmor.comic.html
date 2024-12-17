@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page Example</title>
+    <style>
+        /* General reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Style for the navigation menu */
+        nav {
+            background-color: #000000;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #000000;
+        }
+        /* Basic page section styling */
+        section {
+            padding: 20px;
+        }
+        #about, #main, #characters, #fanarts, #comics {
+            display: none; /* Initially hide all sections */
+        }
+        /* Active section is displayed */
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="#main" onclick="showSection('main')">main</a></li>
+            <li><a href="#about" onclick="showSection('about')">about</a></li>
+            <li><a href="#characters info" onclick="showSection('characters')">detail</a></li>
+            <li><a href="#fanarts" onclick="showSection('fanarts')">gallery</a></li>
+            <li><a href="#comics" onclick="showSection('comics')">comic</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page sections -->
+    <section id="main" class="active">
+        <h1> . . Welcome . .</h1>
+        <p>This is the home page content.</p>
+    </section>
+    <section id="about">
+        <h1>About</h1>
+        <p>Information about this comic.</p>
+    </section>
+    <section id="characters">
+        <h1>Characters Deta</h1>
+        <p>Details about the characters.</p>
+    </section>
+    <section id="fanarts">
+        <h1>Fan Arts Official</h1>
+        <p>Collection of official fan arts.</p>
+    </section>
+    <section id="comics">
+        <h1>Comics</h1>
+        <p>Explore the comics here.</p>
+    </section>
+
+    <!-- JavaScript to toggle sections -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Example</title>
+    <style>
+        /* Default body style */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </style>
+</head>
+<body>
+
+   
+
+    <script>
+        // Change background color when the page loads
+        document.body.style.backgroundColor = "BLACK"; // Light grayish background color
+
+        // You can also change it to another color dynamically later
+        // document.body.style.backgroundColor = "#e0f7fa"; // Light blue background
+    </script>
+
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>" Welcome.."</title>
+    <style>
+        /* Styling for the moving text container */
+        .welcome-text {
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            position: absolute;
+            color: white;
+            top: 50%; /* Center vertically */
+            left: 100%; /* Start the text outside the screen */
+            animation: moveText 10s linear infinite; /* Animation to move the text */
+        }
+
+        /* Keyframe for the animation */
+        @keyframes moveText {
+            0% {
+                left: 100%; /* Start from right side of the screen */
+            }
+            100% {
+                left: -100%; /* End at the left side of the screen */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-text">Welcome to the main page (i'm still working at the website)</div>
+
+</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Copyright</title>
+    <style>
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #black;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <footer>
+        &copy; 2024 Velmor by Haunter Casse
+    </footer>
+
+</body>
+</html>
